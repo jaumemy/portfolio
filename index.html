@@ -335,6 +335,10 @@
         margin-bottom: 100px;
       }
 
+      .rlybackend {
+        margin-top: -150px;
+      }
+
 
       .frontend {
         display: flex;
@@ -611,7 +615,19 @@
 
 
 
+     /* ADJUSTMENTS */
+     .section-link{
+       font-size: 1.30rem;
+     }
 
+     #backend {
+       transform: translateY(-225px);
+     }
+
+
+     #cv {
+       transform: translateY(-100px);
+     }
 
 
 
@@ -862,11 +878,14 @@
         }
 
 
+
       }
 
       @media (max-width: 800px) {
+        .backendh1 {
+          margin-top: -100px;
+        }
         .frontend h1 {
-          margin-top: -210px;
           margin-bottom: 170px;
         }
         .card.small.smaller {
@@ -949,7 +968,7 @@
       }
 
       .spanish_p5::after {
-        content: "Trabajo con Django y Python. Tengo algo de experiencia con PostgreSQL, AWS y S3 Buckets. Desliza para ver más o visita la página completa de Back End."
+        content: "Trabajo con Django y Python. Tengo algo de experiencia con Requests y APIS, PostgreSQL, AWS y S3 Buckets. Aquí puedes ver mis proyectos de Back End."
       }
 
       .spanish_p6::after {
@@ -957,11 +976,11 @@
       }
 
       .spanish_p7::after {
-        content: "Una red social donde puedes crear 'galaxias', unirte a ellas, postear y compartir tus ideas 'galácticas' con otros usuarios."
+        content: "Dashboard para usuarios registrados con información proviniente de una API sobre el Covid-19 tanto a nivel mundial como por el país seleccionado por el usuario."
       }
 
       .spanish_p8::after {
-        content: "Estudié Ingeniería Industrial, trabajando con Python, Matlab y C#. Durante la pandemia de 2020 decidí aprender desarrollo web y data science. Cuando no estoy programando, soy también Instructor de Fitness y Árbitro de Baloncesto."
+        content: "Estudié Ingeniería Industrial, trabajando con Python, Matlab y C#. Durante la pandemia de 2020 decidí aprender más sobre desarrollo y data science. Cuando no estoy programando, soy también Instructor de Fitness y Árbitro de Baloncesto."
       }
 
       .spanish_p9::after {
@@ -1001,8 +1020,8 @@
 
             <ul class="adjust1">
 
-              <li><a href="#frontend" class="mobilenav">Front End</a></li>
               <li><a href="#backend" class="mobilenav">Back End</a></li>
+              <li><a href="#frontend" class="mobilenav">Front End</a></li>
               <li><a href="#cv" class="mobilenav">CV</a></li>
               <li><a href="#contact" class="mobilenav">Contact</a></li>
 
@@ -1023,8 +1042,8 @@
         <div class="desktopnav">
           <ul>
 
-            <li><a href="#frontend" class="desktopnav" id="frontendBtn">Front End</a></li>
             <li><a href="#backend" class="desktopnav">Back End</a></li>
+            <li><a href="#frontend" class="desktopnav" id="frontendBtn">Front End</a></li>
             <li><a href="#cv" class="desktopnav">CV</a></li>
             <li><a href="#contact" class="desktopnav">Contact</a></li>
 
@@ -1059,12 +1078,151 @@
 
     <a class="call-to-action" href="https://www.backend.jmontane.dev/">Go to django!</i> </a>
 
-    <div class="" id="frontend">
+    <div class="" id="backend">
 
     </div>
 
 
+
+
+
+
+    <!-- BACK END SECTION -->
+
+        <section class="container frontend rlybackend" >
+
+          <h1 id="backendh1">Back End</h1>
+
+          <div class="card small smaller">
+
+            <div class="card-description" id="backendAnchorTag">
+              <p class="findme translate_p5"> <span> I work with Django and Python.
+                <br>
+                I have some experience with Requests and APIs, PostreSQL, AWS and S3 Buckets. </span> </p>
+                <p class="section-link"> <a href="https://www.backend.jmontane.dev/" id="django"> FULL BACK END SECTION </a>  </p>
+            </div>
+
+          </div>
+
+          <div class="showcase" >
+
+            <div class="title">
+              <h2>Showcase</h2>
+            </div>
+
+            <div class="projects">
+
+
+              <div class="project">
+
+                <div class="card">
+
+                  <div class="image">
+
+                    <img class="card-pic backend" src="https://jm50projects.herokuapp.com/static/images/portfolio/crm1.8404460c00f2.png" alt="">
+
+                  </div>
+
+                  <div class="card-description backend">
+
+                    <div class="project-skills">
+                      <span class="skill">Django</span>
+                      <span class="skill">AWS</span>
+                      <span class="skill">PostgreSQL</span>
+                      <span class="skill">S3 Buckets</span>
+                      <span class="skill">Server Security</span>
+                    </div>
+
+                    <div class="project-title">
+                      CRM
+                    </div>
+
+                    <div class="project-text">
+                      <p class="translate_p6"> <span> This is a Custom Relationship Manager where you can sign up,
+                      log in and then create customers, place orders or edit your profile
+                      info and image. </span> </p>
+
+                    </div>
+
+                    <div class="project-links">
+                      <a href="https://github.com/jaumemy/dennisivy-django-crashcourse" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/github.1d8393ee3ff2.png"/>  Code</a>
+                      <a href="https://crm1app.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/website.dc3585159131.png"> Live</a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="project">
+
+                <div class="card">
+
+                  <div class="image">
+
+                    <img class="card-pic backend" src="https://raw.githubusercontent.com/jaumemy/whaleandjaguar-project/main/covid19dashboard.png" alt="covid19 dashboard screenshot">
+
+                  </div>
+
+                  <div class="card-description backend">
+
+                    <div class="project-skills">
+                      <span class="skill">Django</span>
+                      <span class="skill">API</span>
+                      <span class="skill">Requests</span>
+                      <span class="skill">User authentication</span>
+                    </div>
+
+                    <div class="project-title">
+                      COVID-19 DASHBOARD
+                    </div>
+
+                    <div class="project-text">
+                      <p class="translate_p7"> <span> It is a basic Dashboard for registered users, showing information provided by an API about Covid-19, both globally and for a country selected by the user </span> </p>
+
+                    </div>
+
+                    <div class="project-links">
+                      <a href="https://github.com/jaumemy/whaleandjaguar-project" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/github.1d8393ee3ff2.png"/>  Code</a>
+                      <a href="https://cvd19dashboard.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/website.dc3585159131.png"> Live</a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+
+        <div class="line" id="cvs">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 <!-- FRONT END SECTION -->
+
+    <div id="frontend">
+
+    </div>
 
 
     <section class="container frontend">
@@ -1079,8 +1237,8 @@
           <p class="findme translate_p2"> <span> I work with Html, Css and Javascript.
             <br>
             I am learning React and can use other libraries like Bootstrap or jQuery.
-            <br>
-            Scroll down or see more in the full <a href="https://www.frontend.jmontane.dev/"> FRONT END</a> page.</span> </p>
+            </span> </p>
+            <p class="section-link"> <a href="https://www.frontend.jmontane.dev/" id="django"> FULL FRONT END SECTION </a>  </p>
         </div>
 
       </div>
@@ -1193,150 +1351,23 @@
     </section>
 
 
-    <div class="line" id="backend">
+    <div class="line" id="backends">
 
     </div>
 
 
 
 
-
-
-
-
-
-
-<!-- BACK END SECTION -->
-
-
-
-
-    <section class="container frontend">
-
-      <h1 id="backendh1">Back End</h1>
-
-      <div class="card small smaller">
-
-        <div class="card-description" id="backendAnchorTag">
-          <p class="findme translate_p5"> <span> I work with Django and Python.
-            <br>
-            I have some experience with PostreSQL, AWS and S3 Buckets.
-            <br>
-            Scroll down or see more in the full <a href="https://www.backend.jmontane.dev/" id="django"> BACK END </a> page. </span> </p>
-        </div>
-
-      </div>
-
-      <div class="showcase" >
-
-        <div class="title">
-          <h2>Showcase</h2>
-        </div>
-
-        <div class="projects">
-
-
-          <div class="project">
-
-            <div class="card">
-
-              <div class="image">
-
-                <img class="card-pic backend" src="https://jm50projects.herokuapp.com/static/images/portfolio/crm1.8404460c00f2.png" alt="">
-
-              </div>
-
-              <div class="card-description backend">
-
-                <div class="project-skills">
-                  <span class="skill">Django</span>
-                  <span class="skill">AWS</span>
-                  <span class="skill">PostgreSQL</span>
-                  <span class="skill">S3 Buckets</span>
-                  <span class="skill">Server Security</span>
-                </div>
-
-                <div class="project-title">
-                  CRM
-                </div>
-
-                <div class="project-text">
-                  <p class="translate_p6"> <span> This is a Custom Relationship Manager where you can sign up,
-                  log in and then create customers, place orders or edit your profile
-                  info and image. </span> </p>
-
-                </div>
-
-                <div class="project-links">
-                  <a href="https://github.com/jaumemy/dennisivy-django-crashcourse" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/github.1d8393ee3ff2.png"/>  Code</a>
-                  <a href="https://crm1app.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/website.dc3585159131.png"> Live</a>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="project">
-
-            <div class="card">
-
-              <div class="image">
-
-                <img class="card-pic backend" src="https://jm50projects.herokuapp.com/static/images/portfolio/spacerweb.b899851812e3.png" alt="">
-
-              </div>
-
-              <div class="card-description backend">
-
-                <div class="project-skills">
-                  <span class="skill">Django</span>
-                  <span class="skill">User Auth</span>
-                  <span class="skill">SQLite</span>
-                </div>
-
-                <div class="project-title">
-                  SPACER
-                </div>
-
-                <div class="project-text">
-                  <p class="translate_p7"> <span> This is a social media website where you can create "galaxies", join them,
-                  post and share your galactic thoughts with other users. </span> </p>
-
-
-                </div>
-
-                <div class="project-links">
-                  <a href="https://github.com/jaumemy/django-second-clone-project" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/github.1d8393ee3ff2.png"/>  Code</a>
-                  <a href="https://spacerweb.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/website.dc3585159131.png"> Live</a>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <div class="line" id="cv">
-
-    </div>
 
 
 
 
 
     <!-- CV SECTION -->
+
+    <div id="cv">
+
+    </div>
 
 
     <section class="container cv">
@@ -1347,7 +1378,7 @@
 
         <div class="card-description-cv">
           <p class="findme translate_p8"> <span> I studied Industrial Engineering, working with Python, Matlab and C#. <br>
-          During the 2020 pandemic I decided to learn web development and data science. <br>
+          During the 2020 pandemic I decided to learn more computer programming and data science. <br>
           When not coding, I am also a Fitness Instructor and a Basketball Referee. </span> </p>
 
           <div class="cvs">
@@ -1614,26 +1645,26 @@
     }
 
 
-    function addAnchorTags() {
-      const frontendAnchorTag = document.getElementById('frontendAnchorTag')
-      var aTag1 = document.createElement('a');
-      aTag1.setAttribute('href',"https://www.frontend.jmontane.dev/");
-      aTag1.innerText = "FRONT END";
-      aTag1.setAttribute("class", "toRemove1");
-      frontendAnchorTag.appendChild(aTag1);
-
-      const backendAnchorTag = document.getElementById('backendAnchorTag')
-      var aTag2 = document.createElement('a');
-      aTag2.setAttribute('href',"https://www.backend.jmontane.dev/");
-      aTag2.innerText = "BACK END";
-      aTag2.setAttribute("class", "toRemove2");
-      backendAnchorTag.appendChild(aTag2);
-    }
-
-    function removeAnchorTags() {
-      document.querySelector('.toRemove1').remove()
-      document.querySelector('.toRemove2').remove()
-    }
+    // function addAnchorTags() {
+    //   const frontendAnchorTag = document.getElementById('frontendAnchorTag')
+    //   var aTag1 = document.createElement('a');
+    //   aTag1.setAttribute('href',"https://www.frontend.jmontane.dev/");
+    //   aTag1.innerText = "FRONT END";
+    //   aTag1.setAttribute("class", "toRemove1");
+    //   frontendAnchorTag.appendChild(aTag1);
+    //
+    //   const backendAnchorTag = document.getElementById('backendAnchorTag')
+    //   var aTag2 = document.createElement('a');
+    //   aTag2.setAttribute('href',"https://www.backend.jmontane.dev/");
+    //   aTag2.innerText = "BACK END";
+    //   aTag2.setAttribute("class", "toRemove2");
+    //   backendAnchorTag.appendChild(aTag2);
+    // }
+    //
+    // function removeAnchorTags() {
+    //   document.querySelector('.toRemove1').remove()
+    //   document.querySelector('.toRemove2').remove()
+    // }
 
 
     // COPY email
